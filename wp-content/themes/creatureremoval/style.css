@@ -1,0 +1,37 @@
+/*
+Theme Name: CreatureRemoval
+Theme URI: https://creatureremoval.local
+Author: Creature Removal
+Author URI: https://creatureremoval.local
+Description: A minimalistic, clean and fast child theme based on Twenty Twenty-Five. Strips away decorative styling and focuses on content-first, distraction-free reading and simple navigation.
+Template: twentytwentyfive
+Requires at least: 6.7
+Tested up to: 7.1
+Requires PHP: 7.2
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: creatureremoval
+Tags: one-column, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, minimalistic, blog
+*/
+
+/*
+ * Minimalistic clean-ups on top of the Twenty Twenty-Five base.
+ * The Design Library / Site Editor remain fully available for customisation.
+ */
+
+/* Keep focus outlines visible but unobtrusive. */
+:where(.wp-site-blocks *:focus-visible) {
+	outline: 2px solid var(--wp--preset--color--contrast);
+	outline-offset: 3px;
+}
+
+/* Remove decorative box-shadow from buttons for a flatter look. */
+.wp-block-button__link,
+.wp-block-button.is-style-outline > .wp-block-button__link {
+	box-shadow: none !important;
+}
+header{
+	background-color: #0d281f;
+	text-align: center;
+}
