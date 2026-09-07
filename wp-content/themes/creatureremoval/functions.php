@@ -1,43 +1,30 @@
 <?php
 /**
- * CreatureRemoval child theme functions and definitions.
- *
- * @package WordPress
- * @subpackage CreatureRemoval
- * @since CreatureRemoval 1.0.0
+ * Divi Child Theme functions and definitions.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+    exit; // Exit if accessed directly.
 }
 
-if ( ! function_exists( 'creatureremoval_enqueue_styles' ) ) :
-	/**
-	 * Enqueues the parent theme stylesheet, then the child theme stylesheet.
-	 *
-	 * @since CreatureRemoval 1.0.0
-	 *
-	 * @return void
-	 */
-	function creatureremoval_enqueue_styles() {
-		$parent_theme = wp_get_theme( 'twentytwentyfive' );
-		$parent_version = $parent_theme->exists() ? $parent_theme->get( 'Version' ) : '1.0';
-
-		// Parent theme stylesheet.
-		wp_enqueue_style(
-			'twentytwentyfive-style',
-			get_parent_theme_file_uri( 'style.min.css' ),
-			array(),
-			$parent_version
-		);
-
-		// Child theme stylesheet.
-		wp_enqueue_style(
-			'creatureremoval-style',
-			get_stylesheet_uri(),
-			array( 'twentytwentyfive-style' ),
-			wp_get_theme()->get( 'Version' )
-		);
-	}
-endif;
-add_action( 'wp_enqueue_scripts', 'creatureremoval_enqueue_styles' );
+/**
+ * Enqueue parent and child theme styles.
+ */
+function divi_child_enqueue_styles() {
+    $parent_style = 'divi-style';
+    
+    wp_enqueue_style(
+        $parent_style,
+        get_template_directory_uri() . '/style.css',
+        array(),
+        wp_get_theme( 'Divi' )->get( 'Version' )
+    );
+    
+    wp_enqueue_style(
+        'divi-child-style',
+        get_stylesheet_directory_uri() . '/style.css',
+        array( $parent_style ),
+        wp_get_theme()->get( 'Version' )
+    );
+}
+add_action( 'wp_enqueue_scripts', 'divi_child_enqueue_styles' );
