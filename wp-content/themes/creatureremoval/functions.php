@@ -28,3 +28,16 @@ function divi_child_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'divi_child_enqueue_styles' );
+
+
+/**
+ * Remove version query string from CSS files
+ */
+function remove_css_version( $src ) {
+    if ( strpos( $src, '?ver=' ) !== false ) {
+        $src = remove_query_arg( 'ver', $src );
+    }
+
+    return $src;
+}
+add_filter( 'style_loader_src', 'remove_css_version', 9999 );
