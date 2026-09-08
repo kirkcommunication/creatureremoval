@@ -12,3 +12,4 @@
 */
 
 /* Add custom CSS styles below this line */
+#page-container #main-header{ background-color: #0D281F; box-shadow:none; border-bottom: 1px solid rgba(31, 40, 35, 0.08); }
