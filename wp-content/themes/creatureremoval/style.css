@@ -13,4 +13,4 @@
 
 /* Add custom CSS styles below this line */
 .footer_menu ul li{ width:100%;}
-.eyebrowtext{font-family: 'DM Sans';font-style: normal;font-weight: 400;font-size: 16px;line-height: 150%;text-transform: uppercase;color: #C59A45;}
+.eyebrowtext p, .eyebrowtext .et_pb_text_inner{font-family: 'DM Sans';font-style: normal;font-weight: 400;font-size: 16px;line-height: 150%;text-transform: uppercase;color: #C59A45;}
