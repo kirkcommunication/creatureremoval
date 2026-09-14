@@ -16,3 +16,5 @@
 .eyebrowtext p, .eyebrowtext .et_pb_text_inner{font-family: 'DM Sans';font-style: normal;font-weight: 400;font-size: 16px;line-height: 150%;text-transform: uppercase;color: #C59A45;}
 .top_rightcontact .et_pb_text_inner div{font-family: 'DM Sans'; font-style: normal;font-weight: 600;font-size: 14px;line-height: 16px;letter-spacing: 1.5px; text-transform: uppercase;color: rgba(255, 255, 255, 0.6);}
 .top_rightcontact .et_pb_text_inner a{font-family: 'DM Sans'; font-style: normal;font-weight: 600;font-size: 30px;line-height: 110%;color: #FFFFFF;}
+
+.et_pb_button_module_wrapper a.et_pb_button{display: flex; justify-content: center;align-items: center;padding: 0px 22px;gap: 8px;min-height: 52px;background: #C59A45;border-radius: 9px;font-family: 'DM Sans'; font-weight: 800; font-size: 18px;line-height: 1px; color: #FFFFFF;}
