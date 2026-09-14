@@ -14,4 +14,5 @@
 /* Add custom CSS styles below this line */
 .footer_menu ul li{ width:100%;}
 .eyebrowtext p, .eyebrowtext .et_pb_text_inner{font-family: 'DM Sans';font-style: normal;font-weight: 400;font-size: 16px;line-height: 150%;text-transform: uppercase;color: #C59A45;}
+.top_rightcontact .et_pb_text_inner div{font-family: 'DM Sans'; font-style: normal;font-weight: 600;font-size: 14px;line-height: 16px;letter-spacing: 1.5px; text-transform: uppercase;color: rgba(255, 255, 255, 0.6);}
 .top_rightcontact .et_pb_text_inner a{font-family: 'DM Sans'; font-style: normal;font-weight: 600;font-size: 30px;line-height: 110%;color: #FFFFFF;}
