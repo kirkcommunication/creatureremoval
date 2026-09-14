@@ -18,6 +18,7 @@
 .top_rightcontact .et_pb_text_inner a{font-family: 'DM Sans'; font-style: normal;font-weight: 600;font-size: 30px;line-height: 110%;color: #FFFFFF;}
 
 .et_pb_button_module_wrapper a{display: flex; justify-content: center;align-items: center;padding: 0px 22px;gap: 8px;min-height: 52px;border-radius: 9px;font-family: 'DM Sans'; font-weight: 800; font-size: 18px;line-height: 1px; }
-.et_pb_button_module_wrapper a.et_pb_button.btn_yellow{background: #C59A45; color: #FFFFFF;}
+.et_pb_button_module_wrapper a.et_pb_button.btn_yellow{background: #C59A45; color: #FFFFFF; border:none;}
+.et_pb_button_module_wrapper a.et_pb_button.btn_yellow:hover{background: #C59A45; color: #FFFFFF; border:none; border-radius:9px;}
 .et_pb_button_module_wrapper a.et_pb_button.btn_line{background: transparent; border:1px solid #BFC8C1; color: #FFFFFF;}
 .et_pb_button_module_wrapper a.et_pb_button.btn_green{background: #15382B; color: #FFFFFF;}
